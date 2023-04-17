@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+}
+
+.header a {
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.header a:hover::after {
+    animation: bb .4s linear both;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+@keyframes bb {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
