@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import Header from '../header/Header'
+import bg from '../../assets/robot.png'
 
 function Home() {
     return (
@@ -11,11 +12,12 @@ function Home() {
                 <div className="home_wrapper">
                     <div className="home_wrapper_left">
                         <div className="home_img">
-                            <img src="" alt="my_photo" />
+                            <img src={bg} alt="my_photo" />
                         </div>
                     </div>
                     <div className="home_wrapper_right">
                         <h1>Hello, I'm a <br /><span>Full-stack web Developer</span></h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos aspernatur sequi repellat magni iste est perspiciatis maiores, laboriosam cumque molestias? Optio voluptate laboriosam odio impedit debitis voluptatem ipsa ullam.</p>
                         <div>
                             <a href="/" download>Download Resume</a>
                             <a href="/">View Resume</a>
